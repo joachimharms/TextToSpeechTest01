@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.TextToSpeech;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,14 @@ namespace TextToSpeechTest01
 		{
 			InitializeComponent();
 		}
+
+
+		private void Button_OnClicked(object sender, EventArgs e)
+		{
+			var text = MainEntry.Text;
+
+			CrossTextToSpeech.Current.Speak(text);
+		}
+
 	}
 }
