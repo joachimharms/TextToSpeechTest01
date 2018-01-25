@@ -8,10 +8,11 @@
     <StackLayout Orientation="Vertical">
         <Entry x:Name="MainEntry"
                Text="Hallo Welt"/>
-        <Button Text="Speak"
+        <Button Text="Ausgabe"
                 Clicked="Button_OnClicked"/>
 
-
+        <Button Text="Aufnahme starten"
+                Clicked="Button_OnClicked"/>
     </StackLayout>
 
 </ContentPage>
